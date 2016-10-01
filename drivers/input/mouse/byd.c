@@ -95,13 +95,13 @@ static const struct byd_ext_cmd byd_ext_cmd_data[] = {
 	{ BYD_CMD_GESTURE,    0x29, BTN_FORWARD }, /* rotate clockwise          */
 	{ BYD_CMD_SCROLL_INC, 0x2a, REL_HWHEEL  }, /* scroll right (two finger) */
 	{ BYD_CMD_SCROLL_DEC, 0x2b, REL_WHEEL   }, /* scroll down (two finger)  */
-	{ BYD_CMD_GESTURE,    0x2c, BTN_SIDE    }, /* 3-finger-swipe right      */
-	{ BYD_CMD_GESTURE,    0x2d, BTN_TASK    }, /* 3-finger-swipe down       */
+	{ BYD_CMD_GESTURE,    0xd4, BTN_SIDE    }, /* 3-finger-swipe right      */
+	{ BYD_CMD_GESTURE,    0xd3, BTN_TASK    }, /* 3-finger-swipe down       */
 	{ BYD_CMD_GESTURE,    0x33, BTN_MOUSE+10}, /* four finger down          */
 	{ BYD_CMD_SCROLL_INC, 0x35, REL_HWHEEL  }, /* scroll right (region)     */
 	{ BYD_CMD_SCROLL_DEC, 0x36, REL_WHEEL,  }, /* scroll down (region)      */
-	{ BYD_CMD_GESTURE,    0xd3, BTN_MOUSE+8 }, /* 3-finger-swipe up         */
-	{ BYD_CMD_GESTURE,    0xd4, BTN_EXTRA   }, /* 3-finger-swipe left       */
+	{ BYD_CMD_GESTURE,    0x2d, BTN_MOUSE+8 }, /* 3-finger-swipe up         */
+	{ BYD_CMD_GESTURE,    0x2c, BTN_EXTRA   }, /* 3-finger-swipe left       */
 	{ BYD_CMD_SCROLL_INC, 0xd5, REL_WHEEL   }, /* scroll up (two finger)    */
 	{ BYD_CMD_SCROLL_DEC, 0xd6, REL_HWHEEL  }, /* scroll left (two finger)  */
 	{ BYD_CMD_GESTURE,    0xd7, BTN_BACK    }, /* rotate anti-clockwise     */
