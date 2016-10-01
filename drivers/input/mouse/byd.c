@@ -38,7 +38,7 @@
 #define BYD_CMD_PAIR(c)		((1 << 12) | (c))
 #define BYD_CMD_PAIR_R(r,c)	((1 << 12) | (r << 8) | (c))
 
-#define DEBUG 0
+#define DEBUG  0
 
 struct byd_model_info {
 	char name[16];
@@ -111,6 +111,12 @@ static const struct byd_ext_cmd byd_ext_cmd_data[] = {
 	{ BYD_CMD_GESTURE,    0xcd, BTN_MOUSE+9 }, /* four finger up            */
 	{ BYD_CMD_GESTURE,    0xd2, BTN_RIGHT   }, /* right corner click        */
 	{ BYD_CMD_GESTURE,    0x2e, BTN_LEFT    }, /* left corner click         */
+	{ BYD_CMD_SCROLL_INC, 0xca, REL_WHEEL   }, /* scroll up (region)        */
+	{ BYD_CMD_SCROLL_DEC, 0xcb, REL_HWHEEL  }, /* scroll left (region)      */
+	{ BYD_CMD_GESTURE,    0xcd, BTN_MOUSE+9 }, /* four finger up            */
+	{ BYD_CMD_GESTURE,    0xd2, BTN_RIGHT   }, /* right corner click        */
+	{ BYD_CMD_GESTURE,    0x2e, BTN_LEFT    }, /* left corner click         */
+
 };
 
 struct byd_data {
