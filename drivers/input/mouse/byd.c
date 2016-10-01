@@ -55,18 +55,18 @@ static const unsigned char byd_init_param[] = {
 	0xd0, 0x00,  // reset button
 	0xd0, 0x06,  // send click in both corners as separate gestures
 	//0xd4, 0x02,  // disable tapping.
-	//0xd5, 0x03,  // tap and drag off
-	//0xd7, 0x04,  // edge scrolling off
+	0xd5, 0x03,  // tap and drag off
+	0xd7, 0x04,  // edge scrolling off
 	0xd8, 0x04,  // edge motion disabled
 	0xda, 0x04,  // slide speed fast
-	//0xdb, 0x01,  // Edge motion off
+	0xdb, 0x01,  // Edge motion off
 	0xe4, 0x05,  // Edge motion speed middle.
 	0xd6, 0x07,  // Touch Gesture Sensitivity high
 	0xde, 0x01,  // Palm detection low: seems to affect gesture detection
 	0xe3, 0x01,  // Enable gesture detection
-	//0xcf, 0x00,  // Tap/Drag delay - off
+	0xcf, 0x00,  // Tap/Drag delay - off
 	0xd2, 0x03,  // Enable two-finger scrolling gesture in both directions
-	//0xe5, 0x00,  // Two finger continue scrolling at edge - off
+	0xe5, 0x00,  // Two finger continue scrolling at edge - off
 	// 0xd9, 0x02,  // unknown - unnecessary?
 	// 0xd9, 0x07,  // unknown - unnecessary?
 	0xdc, 0x03,  // left edge width medium
